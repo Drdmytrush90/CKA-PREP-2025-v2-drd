@@ -19,22 +19,22 @@ Straightforward CKA practice labs derived from the CKA-PREP playlist, renumbered
    ```bash
    ./scripts/run-question.sh "Question-13 Network-Policy"
    ```
-   to apply the setup and print the question text, or run `bash "Question-1 HPA/LabSetUp.bash"` manually.
+   to apply the setup and print the question text, or run `bash "Question-01 HPA/LabSetUp.bash"` manually.
 4. Work through the task, then consult `SolutionNotes.bash` if you need help.
 
 ## Available Questions
 
 | Question | Topic |
 |----------|-------|
-| Question-1 HPA | HorizontalPodAutoscaler with scale-down stabilization window |
-| Question-2 Ingress | Ingress exposing echoserver-service on example.org/echo |
-| Question-3 Cri-Dockerd | Install cri-dockerd .deb + sysctl params for kubeadm |
-| Question-4 Resource-Allocation | Fair CPU/memory requests across WordPress replicas |
-| Question-5 Sidecar | Co-located logging container with shared /var/log volume |
-| Question-6 CNI & Network Policy | Install Calico (tigera-operator) as the cluster CNI |
-| Question-7 Storage-Class | local-path StorageClass, WaitForFirstConsumer, default SC |
-| Question-8 NodePort | Expose front-end Deployment port 80 via NodePort Service |
-| Question-9 PriorityClass | high-priority class one less than highest user-defined |
+| Question-01 HPA | HorizontalPodAutoscaler with scale-down stabilization window |
+| Question-02 Ingress | Ingress exposing echoserver-service on example.org/echo |
+| Question-03 Cri-Dockerd | Install cri-dockerd .deb + sysctl params for kubeadm |
+| Question-04 Resource-Allocation | Fair CPU/memory requests across WordPress replicas |
+| Question-05 Sidecar | Co-located logging container with shared /var/log volume |
+| Question-06 CNI & Network Policy | Install Calico (tigera-operator) as the cluster CNI |
+| Question-07 Storage-Class | local-path StorageClass, WaitForFirstConsumer, default SC |
+| Question-08 NodePort | Expose front-end Deployment port 80 via NodePort Service |
+| Question-09 PriorityClass | high-priority class one less than highest user-defined |
 | Question-10 ArgoCD | Argo CD via Helm template + install, --skip-crds |
 | Question-11 MariaDB-Persistent volume | Restore Deployment with PVC bound to existing PV |
 | Question-12 Gateway-API | Migrate Ingress to Gateway + HTTPRoute with TLS |
