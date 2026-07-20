@@ -19,7 +19,7 @@ kubectl apply -n autoscale -f - <<EOF
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apache-deployment
+  name: apache-server
   namespace: autoscale
 spec:
   replicas: 1
@@ -44,10 +44,10 @@ spec:
 EOF
 
 echo "🔹 Exposing Apache deployment internally..."
-kubectl expose deployment apache-deployment -n autoscale --port=80 --target-port=80
+kubectl expose deployment apache-server -n autoscale --port=80 --target-port=80
 
 echo "✅ HPA lab setup complete."
 echo "   - Namespace: autoscale"
-echo "   - Deployment: apache-deployment"
-echo "   - Service: apache-deployment"
+echo "   - Deployment: apache-server"
+echo "   - Service: apache-server"
 echo "You can now create your HPA resource."

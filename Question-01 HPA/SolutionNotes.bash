@@ -1,4 +1,4 @@
-# Create HPA for apache-deployment in autoscale namespace
+# Create HPA for apache-server in autoscale namespace
 kubectl get deploy -n autoscale
 cat <<'EOF' > hpa.yaml
 apiVersion: autoscaling/v2
@@ -10,7 +10,7 @@ spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: apache-deployment
+    name: apache-server
   minReplicas: 1
   maxReplicas: 4
   metrics:
